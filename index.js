@@ -63,5 +63,5 @@ function getSocketIndexInArray(sockets, id){
 
 app.use(express.static('public'));
 
-app.set('port', 3000);
-server.listen(3000);
+app.set('port', process.env.PORT || 3000);
+server.listen(process.env.PORT || 3000);
