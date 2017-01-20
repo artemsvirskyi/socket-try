@@ -49,10 +49,10 @@
             })();
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://wzrd.in/standalone/uuid@latest"></script>
+        <script src="/uuid.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script>
-            var socket = io('http://localhost:3000');
+            var socket = io(location.href);
 
             socket.on('messages', function(data){
                 renderMessages(data.messages);
