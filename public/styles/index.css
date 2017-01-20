@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+}
+body{
+    margin: 0;
+}
+#messages{
+    position: fixed;
+    top: 100px;
+    border: 1px solid #dadada;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+    /*height: 400px;*/
+    overflow: auto;
+}
+#usernameHolder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.username{
+    font-weight: bold;
+}
+.username::after{
+    content: ": ";
+}
+#addMessageHolder{
+    position: fixed;
+    width: 70%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+}
+#addMessageHolder input{
+    /*width: 50%;*/
+    /*display: block;*/
+    width: 70%;
+    flex: 1;
+}
+#addMessageHolder button{
+    width: 25%;
+}
